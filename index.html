@@ -84,12 +84,15 @@
         #outputMessage.error {
             color: red;
         }
+        .button-container {
+            text-align: center;
+        }
     </style>
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <h1>Síntese de Voz</h1>
+    <h1>TTS Evolux - Azure</h1>
     <form id="synthesisForm">
         <div>
             <label for="escolha_voz">Escolha o gênero da voz:</label>
@@ -106,7 +109,7 @@
             <label for="audio_filename">Nome do arquivo (final com .mp3):</label>
             <input type="text" id="audio_filename" name="audio_filename" value=".mp3">
         </div>
-        <div>
+        <div class="button-container">
             <button type="submit">Gerar e Baixar Áudio</button>
         </div>
         <div id="outputMessage"></div>

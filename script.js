@@ -7,8 +7,9 @@ document.querySelector('form').addEventListener('submit', function(event) {
     
     // Faz a primeira requisição para obter o token
     var url_token = 'https://brazilsouth.api.cognitive.microsoft.com/sts/v1.0/issuetoken';
+    var code = 'OTdhNTU5NTZlODVlNDcxMTkzNDM0ZTkzMTdlMzU4ZDY='
     var headers_token = {
-        'Ocp-Apim-Subscription-Key': '97a55956e85e471193434e9317e358d6',
+        'Ocp-Apim-Subscription-Key': atob(code),
         'Content-Type': 'application/x-www-form-urlencoded',
         'Content-Length': '0'
     };

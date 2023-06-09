@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Síntese de Voz</title>
+    <title>TTS Evolux - Azure</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -92,10 +92,10 @@
     <h1>Síntese de Voz</h1>
     <form id="synthesisForm">
         <div>
-            <label for="escolha_voz">Escolha a voz desejada:</label>
+            <label for="escolha_voz">Escolha o gênero da voz:</label>
             <select id="escolha_voz" name="escolha_voz">
-                <option value="M">Masculina</option>
-                <option value="F">Feminina</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
             </select>
         </div>
         <div>
@@ -103,7 +103,7 @@
             <textarea id="phrase" name="phrase" maxlength="2000"></textarea>
         </div>
         <div>
-            <label for="audio_filename">Nome do arquivo:</label>
+            <label for="audio_filename">Nome do arquivo (final com .mp3):</label>
             <input type="text" id="audio_filename" name="audio_filename" value=".mp3">
         </div>
         <div>
